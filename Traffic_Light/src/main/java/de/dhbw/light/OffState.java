@@ -3,12 +3,14 @@ package de.dhbw.light;
 public class OffState implements TrafficLightState{
     @Override
     public void nextColor(TrafficLight light) {
-        System.out.println("Traffic light is disabled!");
+        //System.out.println("Traffic light is disabled!");
+        throw new UnsupportedOperationException("Traffic light is already disabled!");
     }
 
     @Override
     public String getActualColor() {
-        return "Traffic light is disabled!";
+        //return "Traffic light is disabled!";
+        throw new UnsupportedOperationException("Traffic light is already disabled!");
     }
 
     @Override
