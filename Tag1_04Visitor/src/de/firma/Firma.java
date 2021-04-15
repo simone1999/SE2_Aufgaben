@@ -41,8 +41,6 @@ public class Firma {
 		fireMitarbeiterChangedEvent(event);
 		return eventSuccessful;
 	}
-
-
 	
 	public void iterate(MitarbeiterVisitor visitor) {
 		for (AbstractMitarbeiter mitarbeiter : mitarbeiters) {
