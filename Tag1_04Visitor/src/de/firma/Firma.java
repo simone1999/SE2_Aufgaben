@@ -14,10 +14,6 @@ public class Firma {
 
 	private List<MitarbeiterChangedListener> mitarbeiterChangedListeners = new ArrayList<>();
 
-	private void fireMitarbeiterChangedEvent(MitarbeiterChangedEvent event, String propertyName) {
-		fireMitarbeiterChangedEvent(new MitarbeiterChangedEvent(this, propertyName));
-	}
-
 	private void fireMitarbeiterChangedEvent(MitarbeiterChangedEvent event) {
 		for (MitarbeiterChangedListener listener : mitarbeiterChangedListeners) {
 			listener.propertyChanged(event);
